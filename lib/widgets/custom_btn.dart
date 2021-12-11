@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fuko_app/screens/auth/login.dart';
+import 'package:fuko_app/screens/auth/signup.dart';
 
 Widget customButtom(context, title, btnColor, textColor) {
   return Container(
@@ -16,12 +18,11 @@ Widget customButtom(context, title, btnColor, textColor) {
       ),
       onPressed: () {
         if (title == "Login") {
-          // Navigator.push(
-          //     context, MaterialPageRoute(builder: (context) => HomeScreen())
-          //     );
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => LoginPage()));
         } else if (title == "Sign up") {
-          // Navigator.push(
-          //     context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => SignUpPage()));
         } else if (title == "next") {
           // Navigator.push(
           //     context, MaterialPageRoute(builder: (context) => HomeScreen()));

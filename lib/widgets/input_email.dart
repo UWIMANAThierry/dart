@@ -12,13 +12,19 @@ class _EmailInputFeildState extends State<EmailInputFeild> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: Colors.blue[50],
+      ),
       child: TextFormField(
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
             hintText: 'example@fuko.com',
-            suffixIcon: Icon(Icons.check_circle, color: Colors.blue),
-            border:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+            suffixIcon: Icon(Icons.email, color: Colors.cyan[900]),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide.none,
+            )),
       ),
     );
   }
