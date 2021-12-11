@@ -84,33 +84,35 @@ class _SignUpPageState extends State<SignUpPage> {
     final textColorTwo = Colors.black54;
     return Container(
       padding: EdgeInsets.only(left: 30, right: 30, top: 30),
-      child: Column(
-        children: [
-          usernameFormField(),
-          SizedBox(
-            height: 20,
-          ),
-          EmailInputFeild(),
-          SizedBox(
-            height: 20,
-          ),
-          PwdInputField(),
-          SizedBox(
-            height: 20,
-          ),
-          reppeatFormField(),
-          SizedBox(
-            height: 60,
-          ),
-          customButtom(context, 'Sign up', colorOne, textColorOne),
-          SizedBox(
-            height: 35,
-          ),
-          customButtom(context, 'Login', colorTwo, textColorTwo),
-          SizedBox(
-            height: 48,
-          ),
-        ],
+      child: Form(
+        child: Column(
+          children: [
+            usernameFormField(),
+            SizedBox(
+              height: 20,
+            ),
+            EmailInputFeild(),
+            SizedBox(
+              height: 20,
+            ),
+            PwdInputField(),
+            SizedBox(
+              height: 20,
+            ),
+            reppeatFormField(),
+            SizedBox(
+              height: 60,
+            ),
+            customButtomB(context, 'Sign up', colorOne, textColorOne),
+            SizedBox(
+              height: 35,
+            ),
+            customButtomB(context, 'Login', colorTwo, textColorTwo),
+            SizedBox(
+              height: 48,
+            ),
+          ],
+        ),
       ),
     );
   }

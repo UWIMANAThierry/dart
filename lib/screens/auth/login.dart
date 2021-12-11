@@ -91,22 +91,24 @@ class _LoginPageState extends State<LoginPage> {
     final textColorTwo = Colors.black54;
     return Container(
       padding: EdgeInsets.only(left: 30, right: 30, top: 30),
-      child: Column(
-        children: [
-          usernameFormField(),
-          SizedBox(
-            height: 30,
-          ),
-          PwdInputField(),
-          SizedBox(
-            height: 60,
-          ),
-          customButtom(context, 'Login', colorOne, textColorOne),
-          SizedBox(
-            height: 35,
-          ),
-          customButtom(context, 'Sign up', colorTwo, textColorTwo),
-        ],
+      child: Form(
+        child: Column(
+          children: [
+            usernameFormField(),
+            SizedBox(
+              height: 30,
+            ),
+            PwdInputField(),
+            SizedBox(
+              height: 60,
+            ),
+            customButtom(context, 'Login', colorOne, textColorOne),
+            SizedBox(
+              height: 35,
+            ),
+            customButtom(context, 'Sign up', colorTwo, textColorTwo),
+          ],
+        ),
       ),
     );
   }
