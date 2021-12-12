@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fuko_app/screens/auth/login.dart';
+import 'package:fuko_app/screens/pages/loan.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -81,7 +82,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             margin: EdgeInsets.only(top: 10),
             child: Text(
-              "Frw",
+              "Rwf",
               style: TextStyle(
                   color: Colors.white60,
                   fontSize: 20,
@@ -191,7 +192,10 @@ class _HomePageState extends State<HomePage> {
                     )
                   ],
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoanPage()));
+                },
               ),
             ),
             SizedBox(
