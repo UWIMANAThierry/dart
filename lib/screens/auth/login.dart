@@ -15,21 +15,27 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: SingleChildScrollView(
-              child: Container(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 5,
-            ),
-            topContent(),
-            SizedBox(
-              height: 10,
-            ),
-            loginInputField()
-          ],
-        ),
-      ))),
+          child: Container(
+        height: MediaQuery.of(context).size.height,
+        child: SingleChildScrollView(
+            child: Container(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 5,
+              ),
+              topContent(),
+              SizedBox(
+                height: 10,
+              ),
+              loginInputField(),
+              SizedBox(
+                height: 40,
+              ),
+            ],
+          ),
+        )),
+      )),
     );
   }
 
